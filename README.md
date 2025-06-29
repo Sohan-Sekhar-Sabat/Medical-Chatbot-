@@ -21,5 +21,25 @@ conda activate WellNudgeAI
 pip install -r requirements.txt
 ```
 
+### Create a .env file in the root directory and add your Pinecone & openai credentials as follows:
+```bash
+PINECONE_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+YOUR_DESIRED_LLM_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
 
+```bash
+# run to store embeddings to pinecone
+python store_index.py
+```
 
+```bash
+# Finally running the following command
+python app.py
+```
+
+### Techstack Used:
+- Python
+- LangChain
+- Flask
+- GPT
+- Pinecone
